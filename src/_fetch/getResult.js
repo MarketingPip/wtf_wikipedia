@@ -49,10 +49,7 @@ const getResult = function (data, options = {}) {
       domain: domain,
       wikidata: page.pageprops.wikibase_item,
       description: page.pageprops['wikibase-shortdesc'],
-      revisions: {
-        revID: page?.revisions[0]?.revid || null,
-        parentID: page?.revisions[0]?.parentid || null
-      },
+      revisionID: page?.revisions[0]?.revid || null,
     })
 
 
