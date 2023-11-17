@@ -34,6 +34,7 @@ class Document {
     this._options = options
     let props = {
       pageID: options.pageID || options.id || null,
+      revisionID: options.revisions.revID || null,
       namespace: options.namespace || options.ns || null,
       lang: options.lang || options.language || null,
       domain: options.domain || null,
@@ -125,6 +126,23 @@ class Document {
     return this._pageID || null
   }
 
+
+
+  /**
+   * If an pageID is given then it sets the pageID and returns the given pageID
+   * Else if the pageID is already set it returns the pageID
+   *
+   * @param {number} [id] The pageID that will be set
+   * @returns {number|null} The given or found pageID
+   */
+  revisionID(id) {
+    if (id !== undefined) {
+      this._revisionID = id
+    }
+    return this._revisionID || null
+  }
+
+  
   /**
    * If an WikidataID is given then it sets the WikidataID and returns the given WikidataID
    * Else if the WikidataID is already set it returns the WikidataID
