@@ -18,6 +18,7 @@ const defaults = {
   sections: true,
   pageID: true,
   categories: true,
+  revisionID: true,
 }
 
 /**
