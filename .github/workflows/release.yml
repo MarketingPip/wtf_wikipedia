@@ -37,9 +37,3 @@ jobs:
         run: |
           npm run build
 
-      # And finally... publish it!  Note that we create the .npmrc file
-      # "just in time" so that `npm publish` can get the auth token from the
-      # environment
-      - name: publish
-        run: |
-          npm publish
