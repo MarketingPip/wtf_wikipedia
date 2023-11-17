@@ -4,7 +4,7 @@ const isInterWiki = /(wikibooks|wikidata|wikimedia|wikinews|wikipedia|wikiquote|
 
 const defaults = {
   action: 'query',
-  prop: 'revisions|pageprops', // we use the 'revisions' api here, instead of the Raw api, for its CORS-rules..
+  prop: 'revisions|pageprops|ids', // we use the 'revisions' api here, instead of the Raw api, for its CORS-rules..
   rvprop: 'content',
   maxlag: 5,
   rvslots: 'main',
