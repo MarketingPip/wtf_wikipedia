@@ -240,7 +240,8 @@ test('parse a normal case from wikimedia', (t) => {
         namespace: 0,
         domain: 'wiktionary.org',
         wikidata: undefined,
-        description: undefined
+        description: undefined,
+        revisionID: 2619779,
       }
     }
   ]
