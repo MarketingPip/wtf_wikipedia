@@ -61,12 +61,8 @@ const toJSON = function (doc, options) {
   }
 
 
-  if (options.revisions.revID) {
+  if (options.revisionID) {
     data.revisionID = doc.revisionID()
-  }
-
-  if (options.revisions) {
-    data.revisions = doc.revisionInfo()
   }
 
   if (options.categories) {
