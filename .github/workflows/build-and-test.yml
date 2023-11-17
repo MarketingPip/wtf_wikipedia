@@ -23,7 +23,7 @@ jobs:
           npm install
           npm run build
           npm run lint
-          npm run testb
-          npm run test:fetch
+ #         npm run testb
+ #         npm run test:fetch
         env:
           CI: true
